@@ -1,8 +1,6 @@
-
 import 'package:flutter/material.dart';
 
 class FrostedGlass extends StatelessWidget {
-
   final double borderRadius;
 
   final String tempMin;
@@ -11,13 +9,13 @@ class FrostedGlass extends StatelessWidget {
   final String description;
 
   const FrostedGlass({
-    Key? key,
-    this.borderRadius = 30.0,
+    super.key,
+    this.borderRadius = 30,
     required this.tempMin,
     required this.tempMax,
     required this.icon,
     required this.description,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -42,9 +40,7 @@ class FrostedGlass extends StatelessWidget {
                 height: 100,
               ),
               Padding(
-                padding: const EdgeInsets.only(
-                  top: 10,
-                ),
+                padding: const EdgeInsets.only(top: 10),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -52,7 +48,7 @@ class FrostedGlass extends StatelessWidget {
                       description,
                       style: Theme.of(context).textTheme.headlineLarge,
                     ),
-                    const SizedBox(height: 10,),
+                    const SizedBox(height: 10),
                     Text(
                       "Min: $tempMin°\nMax: $tempMax°",
                       style: Theme.of(context).textTheme.headlineLarge,

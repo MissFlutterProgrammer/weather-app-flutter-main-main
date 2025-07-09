@@ -1,8 +1,6 @@
-
 import 'package:flutter/material.dart';
 
 class Tabs extends StatelessWidget {
-
   final String day;
   final String date;
 

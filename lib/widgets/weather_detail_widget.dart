@@ -1,8 +1,6 @@
-
 import 'package:flutter/material.dart';
 
 class WeatherDetailWidget extends StatelessWidget {
-
   final String asset;
   final String value;
   final String title;
@@ -23,11 +21,13 @@ class WeatherDetailWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        isIcon ? icon : Image.asset(
-          asset,
-          color: Theme.of(context).iconTheme.color,
-          width: 30,
-        ),
+        isIcon
+            ? icon
+            : Image.asset(
+                asset,
+                color: Theme.of(context).iconTheme.color,
+                width: 30,
+              ),
         const SizedBox(height: 5),
         Text(
           value,

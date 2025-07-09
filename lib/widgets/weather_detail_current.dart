@@ -1,10 +1,7 @@
-
 import 'package:flutter/material.dart';
 import 'package:weather_app_flutter_main/widgets/weather_detail_widget.dart';
 
-
 class WeatherDetailsCurrent extends StatelessWidget {
-
   final String windSpeed;
   final String windDegree;
   final String pressure;
@@ -132,5 +129,4 @@ class WeatherDetailsCurrent extends StatelessWidget {
       ),
     );
   }
-
 }

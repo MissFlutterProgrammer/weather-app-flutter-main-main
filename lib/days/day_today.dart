@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:weather_app_flutter_main/widgets/daily_summary.dart';
 import 'package:weather_app_flutter_main/widgets/frosted_glass_current.dart';
@@ -7,10 +6,7 @@ import 'package:weather_app_flutter_main/widgets/other_temps.dart';
 import 'package:weather_app_flutter_main/widgets/rise_set_timings.dart';
 import 'package:weather_app_flutter_main/widgets/weather_detail_current.dart';
 
-
-
 class DayToday extends StatelessWidget {
-
   final String windSpeed;
   final String windDegree;
   final String pressure;
@@ -61,17 +57,14 @@ class DayToday extends StatelessWidget {
     required this.clouds,
     required this.dewPoint,
     required this.windGust,
-
     required this.morningTemp,
     required this.dayTemp,
     required this.eveningTemp,
     required this.nightTemp,
-
     required this.length,
     required this.hourlyList,
     required this.hourlyIconList,
     required this.hourlyTempList,
-
     required this.sunrise,
     required this.sunset,
     required this.moonrise,

@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:weather_app_flutter_main/screens/home_page.dart';
 import 'package:weather_app_flutter_main/theme/app_theme.dart';

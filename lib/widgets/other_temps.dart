@@ -1,10 +1,7 @@
-
 import 'package:flutter/material.dart';
 import 'package:weather_app_flutter_main/widgets/weather_detail_widget.dart';
 
-
 class OtherTemps extends StatelessWidget {
-
   final String morningTemp;
   final String dayTemp;
   final String eveningTemp;

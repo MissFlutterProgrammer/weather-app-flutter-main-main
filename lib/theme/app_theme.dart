@@ -1,7 +1,5 @@
-
 import 'package:flutter/material.dart';
 import 'package:weather_app_flutter_main/theme/pallete.dart';
-
 
 class AppTheme {
   static ThemeData darkTheme = ThemeData.dark(useMaterial3: true).copyWith(
@@ -13,8 +11,6 @@ class AppTheme {
       onSecondary: PalleteDark.secondaryColor,
       error: Colors.red,
       onError: Colors.red,
-      background: Colors.white30,
-      onBackground: PalleteDark.secondaryColor,
       surface: Colors.black54,
       onSurface: Colors.black12,
     ),
@@ -29,7 +25,7 @@ class AppTheme {
     iconTheme: const IconThemeData(
       color: PalleteDark.activeTextColor,
     ),
-    tabBarTheme: TabBarTheme(
+    tabBarTheme: TabBarThemeData(
       indicator: BoxDecoration(
         borderRadius: BorderRadius.circular(50),
         gradient: const LinearGradient(
@@ -78,8 +74,6 @@ class AppTheme {
       onSecondary: PalleteLight.secondaryColor,
       error: Colors.red,
       onError: Colors.red,
-      background: PalleteLight.secondaryColor,
-      onBackground: PalleteLight.secondaryColor,
       surface: Color(0xffcbc0d3),
       onSurface: PalleteLight.gradiantToColor,
     ),
@@ -94,13 +88,13 @@ class AppTheme {
     iconTheme: const IconThemeData(
       color: PalleteLight.iconColor,
     ),
-    tabBarTheme: TabBarTheme(
+    tabBarTheme: TabBarThemeData(
       indicator: BoxDecoration(
         borderRadius: BorderRadius.circular(50),
         gradient: const LinearGradient(
           colors: [
-            PalleteLight.gradiantFromColor,
-            PalleteLight.gradiantToColor,
+            PalleteDark.gradiantFromColor,
+            PalleteDark.gradiantToColor,
           ],
         ),
       ),

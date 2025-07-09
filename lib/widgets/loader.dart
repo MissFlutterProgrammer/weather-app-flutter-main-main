@@ -1,10 +1,7 @@
-
 import 'package:flutter/material.dart';
 import 'package:weather_app_flutter_main/theme/pallete.dart';
 
-
 class Loader extends StatelessWidget {
-
   final String? error;
 
   final bool isError;
@@ -33,10 +30,12 @@ class Loader extends StatelessWidget {
             color: PalleteLight.iconColor,
           ),
           const SizedBox(height: 20),
-          isError ? Text(
-            error!,
-            style: Theme.of(context).textTheme.bodyMedium,
-          ) : const SizedBox(),
+          isError
+              ? Text(
+                  error!,
+                  style: Theme.of(context).textTheme.bodyMedium,
+                )
+              : const SizedBox(),
         ],
       ),
     );

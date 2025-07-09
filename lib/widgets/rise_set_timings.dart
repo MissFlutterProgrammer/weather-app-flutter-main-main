@@ -1,10 +1,7 @@
-
 import 'package:flutter/material.dart';
 import 'package:weather_app_flutter_main/widgets/weather_detail_widget.dart';
 
-
 class RiseSetTimings extends StatelessWidget {
-
   final String sunrise;
   final String sunset;
   final String moonrise;
